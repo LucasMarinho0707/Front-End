@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ethernet - Explicação e Questionário</title>
+</head>
+<body>
+
+<h1>Ethernet</h1>
+
+<p>
+A Ethernet é uma tecnologia utilizada para conectar dispositivos em uma rede local (LAN).
+Ela permite a comunicação entre computadores e outros equipamentos por meio de cabos de rede.
+</p>
+
+<p>
+Foi criada na década de 1970 pela empresa Xerox e padronizada pelo IEEE.
+É conhecida por sua velocidade, estabilidade e baixo custo.
+</p>
+
+<p>
+Hoje, é muito utilizada em residências, escolas e empresas para garantir conexão segura e eficiente.
+</p>
+
+<hr>
+
+<h2>Questionário</h2>
+
+<form onsubmit="enviarFormulario(); return false;">
+
+<p>1. A Ethernet é usada principalmente em:</p>
+<input type="radio" name="q1" value="LAN"> Redes locais (LAN)<br>
+<input type="radio" name="q1" value="TV"> Redes de televisão<br>
+<input type="radio" name="q1" value="SAT"> Satélites<br><br>
+
+<p>2. Em qual década a Ethernet foi criada?</p>
+<input type="radio" name="q2" value="1950"> 1950<br>
+<input type="radio" name="q2" value="1970"> 1970<br>
+<input type="radio" name="q2" value="1990"> 1990<br><br>
+
+<p>3. Qual empresa desenvolveu a Ethernet?</p>
+<input type="radio" name="q3" value="Microsoft"> Microsoft<br>
+<input type="radio" name="q3" value="Apple"> Apple<br>
+<input type="radio" name="q3" value="Xerox"> Xerox<br><br>
+
+<p>4. Qual organização padronizou a Ethernet?</p>
+<input type="radio" name="q4" value="IEEE"> IEEE<br>
+<input type="radio" name="q4" value="NASA"> NASA<br>
+<input type="radio" name="q4" value="Google"> Google<br><br>
+
+<p>5. A Ethernet é conhecida por ser:</p>
+<input type="radio" name="q5" value="Lenta"> Lenta<br>
+<input type="radio" name="q5" value="Rapida"> Rápida e estável<br>
+<input type="radio" name="q5" value="Espaco"> Usada apenas no espaço<br><br>
+
+<input type="submit" value="Enviar">
+
+</form>
+
+<p id="mensagem"></p>
+
+<script>
+function enviarFormulario() {
+    document.getElementById("mensagem").innerText =
+        "Formulário enviado com sucesso! Obrigado por responder.";
+}
+</script>
+
+</body>
+</html>
